@@ -9,6 +9,7 @@ public class Win : MonoBehaviour
 {
     public GameObject winPanel;
     public GameObject losePanel;
+    public GameObject pauseButton;
 
     public int numberSuitcase;
 
@@ -26,6 +27,7 @@ public class Win : MonoBehaviour
         if (numberSuitcase <= 2)
         {
             losePanel.SetActive(true);
+            pauseButton.SetActive(false);
         }
     }
 
@@ -41,12 +43,14 @@ public class Win : MonoBehaviour
         if (numberSuitcase <= 2)
         {
             losePanel.SetActive(true);
+            pauseButton.SetActive(false);
         }
 
         if (numberSuitcase >= 2)
         {
             Time.timeScale = 0f;
             winPanel.SetActive(true);
+            pauseButton.SetActive(false);
             WinLevel();
         }
     }

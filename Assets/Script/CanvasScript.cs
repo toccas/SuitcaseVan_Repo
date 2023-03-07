@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class CanvasScript : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject pauseButton;
 
     void Start()
     {
         pauseMenu.SetActive(false);
+        pauseButton.SetActive(true);
     }
 
     public void Replay()
@@ -49,11 +51,13 @@ public class CanvasScript : MonoBehaviour
     public void PauseMenu()
     {
         pauseMenu.SetActive(true);
+        pauseButton.SetActive(false);
         Time.timeScale = 0f;
 
         if (Input.GetButtonDown("Cancel"))
         {
             pauseMenu.SetActive(false);
+            pauseButton.SetActive(true);
         }
     }
 
@@ -61,6 +65,7 @@ public class CanvasScript : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
+        pauseButton.SetActive(true);
     }
 
     public void Ringraziamenti()
