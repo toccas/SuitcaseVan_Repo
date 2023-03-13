@@ -24,7 +24,7 @@ public class Win : MonoBehaviour
 
     void Update()
     {
-        if (numberSuitcase <= 2)
+        if (numberSuitcase <= 1)
         {
             losePanel.SetActive(true);
             pauseButton.SetActive(false);
@@ -40,13 +40,13 @@ public class Win : MonoBehaviour
     {
         Debug.Log("colpito");
 
-        if (numberSuitcase <= 2)
+        if (numberSuitcase <= 1)
         {
             losePanel.SetActive(true);
             pauseButton.SetActive(false);
         }
 
-        if (numberSuitcase >= 2)
+        if (numberSuitcase >= 1)
         {
             Time.timeScale = 0f;
             winPanel.SetActive(true);
