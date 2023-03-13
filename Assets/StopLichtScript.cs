@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class StopLichtScript : MonoBehaviour
 {
+    public float tempoVerde = 3f;
+    public float tempoGiallo = 1f;
+    public float tempoRosso = 2f;
+
     public GameObject trafficLightGreen;
+    public GameObject trafficLightYellow;
     public GameObject trafficLightRed;
 
     public GameObject gameOverPanel;
@@ -15,38 +20,36 @@ public class StopLichtScript : MonoBehaviour
     void Start()
     {
         trafficLightGreen.SetActive(true);
+        trafficLightYellow.SetActive(false);
         trafficLightRed.SetActive(false);
         gameOverPanel.SetActive(false);
         eRosso = false;
+        StartCoroutine(WaitAndCallNext());
+    }
+
+    IEnumerator WaitAndCallNext()
+    {
+        while (true)
+        {
+            trafficLightGreen.SetActive(true);
+            trafficLightYellow.SetActive(false);
+            trafficLightRed.SetActive(false);
+            eRosso = false;
+            yield return new WaitForSeconds(tempoVerde);
+            trafficLightGreen.SetActive(false);
+            trafficLightYellow.SetActive(true);
+            trafficLightRed.SetActive(false);
+            eRosso = false;
+            yield return new WaitForSeconds(tempoGiallo);
+            trafficLightGreen.SetActive(false);
+            trafficLightYellow.SetActive(false);
+            trafficLightRed.SetActive(true);
+            eRosso = true;
+            yield return new WaitForSeconds(tempoRosso);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Debug.Log("fermati è rosso!");
-        trafficLightGreen.SetActive(false);
-        trafficLightRed.SetActive(true);
-        eRosso = true;
-        StartCoroutine(WaitAndCallNext(3.0f));
-    }
-
-    IEnumerator WaitAndCallNext(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-
-        Debug.Log("Sono passati " + waitTime + " secondi.");
-
-        // Esegui il metodo successivo
-        TurnGreen();
-    }
-
-    void TurnGreen()
-    {
-        trafficLightGreen.SetActive(true);
-        trafficLightRed.SetActive(false);
-        eRosso = false;
-    }
-
-    void OnTriggerExit2D(Collider2D hitInfo)
     {
         if (eRosso == true)
         {
