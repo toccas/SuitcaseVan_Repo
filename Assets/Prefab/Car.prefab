@@ -358,7 +358,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -429,6 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1500
   backWheel: {fileID: 6532194104779972042}
+  isPressed: 0
 --- !u!60 &6532194104779972036
 PolygonCollider2D:
   m_ObjectHideFlags: 0
