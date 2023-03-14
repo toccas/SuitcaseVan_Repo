@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Livelli Leo/Livello 5 leo.unity
     guid: 304be3a5ed8037d4e967d7cd49d98403
   - enabled: 1
+    path: Assets/Scenes/Livelli Leo/Livello 6 leo.unity
+    guid: 77d0beb60e432bb41bda7cc361b66c76
+  - enabled: 1
     path: Assets/Scenes/Livelli Leo/Ringraziamenti.unity
     guid: 49431d02acd33db468d4dea9a796778e
   m_configObjects: {}
