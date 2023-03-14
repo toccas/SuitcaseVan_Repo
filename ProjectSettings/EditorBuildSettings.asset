@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Livelli Davide/Livello 2 davide.unity
     guid: 791176cccb0907d438c6ca577ec17ca2
   - enabled: 1
+    path: Assets/Scenes/Livelli Davide/Livello 3 davide.unity
+    guid: 4077b3268493f9541b9e2bd4079bc536
+  - enabled: 1
     path: Assets/Scenes/Livelli Leo/Ringraziamenti.unity
     guid: 49431d02acd33db468d4dea9a796778e
   m_configObjects: {}
