@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2047419900190722791}
   - component: {fileID: 2047419900190722809}
-  - component: {fileID: 2047419900190722790}
+  - component: {fileID: 7734339503426788298}
   m_Layer: 0
-  m_Name: speed bump
+  m_Name: Roccia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047419900190722788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0599985, y: 4.13, z: 0.41206676}
+  m_LocalPosition: {x: -3.029, y: 4.115, z: 0.41206676}
   m_LocalScale: {x: 2, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4895feb8403c40c48920dd2b0e5c10c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4215336505668014ca5f7671b4dc53e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &2047419900190722790
+--- !u!58 &7734339503426788298
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,6 +98,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008406639, y: 0.7157833}
+  m_Offset: {x: 0.038942397, y: -0.6752942}
   serializedVersion: 2
-  m_Radius: 0.26774263
+  m_Radius: 0.7165227
