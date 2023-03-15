@@ -10,11 +10,20 @@ public class CarController : MonoBehaviour
 
     private float movement = 0f;
 
-    public bool isPressed;
+    public bool acelleratoreIsPressed;
+    public bool frenoIsPressed;
 
     void Update()
     {
         movement = -Input.GetAxisRaw("Vertical") * speed;
+
+        if (acelleratoreIsPressed == true)
+            movement = -1 * speed;
+        else
+            movement = 0;
+
+        if (frenoIsPressed == true)
+            movement = 1500f;
     }
 
     void FixedUpdate()
@@ -32,11 +41,21 @@ public class CarController : MonoBehaviour
 
     public void Pressed()
     {
-        isPressed = true;
+        acelleratoreIsPressed = true;
     }
 
     public void NotPressed()
     {
-        isPressed = false;
+        acelleratoreIsPressed = false;
+    }
+
+    public void frenoPressed()
+    {
+        frenoIsPressed = true;
+    }
+
+    public void frenoIsNotPressed()
+    {
+        frenoIsPressed = false;
     }
 }

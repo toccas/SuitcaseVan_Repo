@@ -4103,6 +4103,7 @@ GameObject:
   - component: {fileID: 1134999156}
   - component: {fileID: 1134999158}
   - component: {fileID: 1134999157}
+  - component: {fileID: 1134999159}
   m_Layer: 5
   m_Name: Freno
   m_TagString: Untagged
@@ -4168,6 +4169,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134999155}
   m_CullTransparentMesh: 1
+--- !u!114 &1134999159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134999155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1458597611}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: frenoPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1458597611}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: frenoIsNotPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1329318264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,6 +4674,18 @@ Rigidbody2D:
     type: 3}
   m_PrefabInstance: {fileID: 6532194104015581996}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1458597611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532194104779972043, guid: 13d471fccaf2eaa4fbce874e90f9a14c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6532194104015581996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c608f548482dbd459c07fa774f86509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1507748523
 GameObject:
   m_ObjectHideFlags: 0
@@ -4812,6 +4870,7 @@ GameObject:
   - component: {fileID: 1561169422}
   - component: {fileID: 1561169424}
   - component: {fileID: 1561169423}
+  - component: {fileID: 1561169425}
   m_Layer: 5
   m_Name: AccelleratoreImage
   m_TagString: Untagged
@@ -4877,6 +4936,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561169421}
   m_CullTransparentMesh: 1
+--- !u!114 &1561169425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561169421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1458597611}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: Pressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1458597611}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: NotPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1597435852
 GameObject:
   m_ObjectHideFlags: 0

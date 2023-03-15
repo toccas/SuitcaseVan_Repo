@@ -632,7 +632,7 @@ PrefabInstance:
     - target: {fileID: 4373113070962205474, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4373113070962205475, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
@@ -2119,6 +2119,7 @@ GameObject:
   - component: {fileID: 383082081}
   - component: {fileID: 383082083}
   - component: {fileID: 383082082}
+  - component: {fileID: 383082084}
   m_Layer: 5
   m_Name: AccelleratoreImage
   m_TagString: Untagged
@@ -2184,6 +2185,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383082080}
   m_CullTransparentMesh: 1
+--- !u!114 &383082084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383082080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6532194104015581997}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: Pressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6532194104015581997}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: NotPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &419327104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,7 +2447,7 @@ PrefabInstance:
     - target: {fileID: 2047419900190722791, guid: 427f36742a2572e49a222000b30b6903,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.85
+      value: -9.04
       objectReference: {fileID: 0}
     - target: {fileID: 2047419900190722791, guid: 427f36742a2572e49a222000b30b6903,
         type: 3}
@@ -5504,6 +5550,7 @@ GameObject:
   - component: {fileID: 1206443082}
   - component: {fileID: 1206443084}
   - component: {fileID: 1206443083}
+  - component: {fileID: 1206443085}
   m_Layer: 5
   m_Name: Freno
   m_TagString: Untagged
@@ -5569,6 +5616,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206443081}
   m_CullTransparentMesh: 1
+--- !u!114 &1206443085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206443081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6532194104015581997}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: frenoPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6532194104015581997}
+          m_TargetAssemblyTypeName: CarController, Assembly-CSharp
+          m_MethodName: frenoIsNotPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1329318264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8155,6 +8247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 823614403}
   pauseButton: {fileID: 843618449}
+  plancia: {fileID: 1351790987}
 --- !u!1 &1904977816
 GameObject:
   m_ObjectHideFlags: 0
@@ -8668,7 +8761,7 @@ PrefabInstance:
     - target: {fileID: 2047419900190722791, guid: 6282a4134883c804c94a0e333fd7ff80,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.38
+      value: 14.55
       objectReference: {fileID: 0}
     - target: {fileID: 2047419900190722791, guid: 6282a4134883c804c94a0e333fd7ff80,
         type: 3}
@@ -9166,3 +9259,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13d471fccaf2eaa4fbce874e90f9a14c, type: 3}
+--- !u!114 &6532194104015581997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532194104779972043, guid: 13d471fccaf2eaa4fbce874e90f9a14c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6532194104015581996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c608f548482dbd459c07fa774f86509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -7,6 +7,7 @@ public class CanvasScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject pauseButton;
+    public GameObject plancia;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class CanvasScript : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         pauseButton.SetActive(false);
+        plancia.SetActive(false);
         Time.timeScale = 0f;
 
         if (Input.GetButtonDown("Cancel"))
@@ -66,6 +68,7 @@ public class CanvasScript : MonoBehaviour
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
         pauseButton.SetActive(true);
+        plancia.SetActive(true);
     }
 
     public void Ringraziamenti()
