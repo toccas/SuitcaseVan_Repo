@@ -308,10 +308,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.599999, y: 1.5749999}
-      - {x: -9.599999, y: -1.5749999}
-      - {x: 9.599999, y: -1.5749999}
-      - {x: 9.599999, y: 1.5749999}
+    - - {x: 7.7918715, y: 1.4641335}
+      - {x: 6.4162817, y: 1.2160652}
+      - {x: -9.599999, y: 1.5749999}
+      - {x: -9.599999, y: -1.5749998}
+      - {x: 9.599999, y: -1.5749998}
+      - {x: 9.551167, y: 2.0845523}
 --- !u!212 &29168479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2129,7 +2131,9 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -9.599999, y: 1.5749999}
       - {x: -9.599999, y: -1.5749998}
-      - {x: 9.599999, y: -1.5749998}
+      - {x: 1.3142067, y: 0.2706917}
+      - {x: 5.6095724, y: 0.99707025}
+      - {x: 5.7588406, y: 1.0202707}
       - {x: 9.217234, y: 1.5578394}
 --- !u!212 &425330426
 SpriteRenderer:
@@ -5277,7 +5281,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.559398, y: 1.541996}
+    - - {x: -9.566599, y: 1.5246837}
       - {x: -9.599999, y: -1.5749998}
       - {x: 9.599999, y: -1.5749998}
       - {x: 9.599999, y: 1.5749999}
@@ -5460,9 +5464,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.599999, y: 1.5749999}
-      - {x: -9.599999, y: -1.5749999}
-      - {x: 9.599999, y: -1.5749999}
+    - - {x: -6.5330563, y: 0.18189901}
+      - {x: -7.7282014, y: 0.2309702}
+      - {x: -8.672962, y: 0.6117859}
+      - {x: -9.599999, y: -1.5749998}
+      - {x: 9.599999, y: -1.5749998}
       - {x: 9.599999, y: 1.5749999}
 --- !u!212 &1286606074
 SpriteRenderer:
@@ -5575,6 +5581,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -9.215758, y: 1.6029226}
+      - {x: -9.491443, y: -0.6771308}
       - {x: -9.599999, y: -1.5749998}
       - {x: 9.599999, y: -1.5749998}
       - {x: 9.599999, y: 1.5749999}
@@ -5857,11 +5864,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.61487836, y: 1.6101453}
-      - {x: -9.599999, y: 1.5749999}
+    - - {x: 8.524008, y: 1.703224}
+      - {x: 8.138944, y: 1.7048681}
+      - {x: -0.61487836, y: 1.6101453}
+      - {x: -9.563351, y: 1.5590755}
       - {x: -9.599999, y: -1.5749998}
       - {x: 9.599999, y: -1.5749998}
-      - {x: 9.025086, y: 1.6478492}
+      - {x: 9.015362, y: 1.6308032}
 --- !u!212 &1312482036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7685,23 +7694,68 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 8.699705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 1.6877172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: 8.255744
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: -1.5749998
+      value: 1.681739
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -9.599999
       objectReference: {fileID: 0}
     - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -1.5749998
+      value: 1.5749999
       objectReference: {fileID: 0}
     - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 9.034702
+      value: -9.599999
       objectReference: {fileID: 0}
     - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: 1.5745581
+      value: -1.5749998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 9.599999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: -1.5749998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 9.054738
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373113070962205472, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: 1.583044
       objectReference: {fileID: 0}
     - target: {fileID: 4373113070962205475, guid: 304d6f61d2edbd94fb060ef3e81e0bc3,
         type: 3}
@@ -8059,7 +8113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1903459417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8316,10 +8370,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.599999, y: 1.5749999}
-      - {x: -9.599999, y: -1.5749999}
-      - {x: 9.599999, y: -1.5749999}
-      - {x: 9.599999, y: 1.5749999}
+    - - {x: 7.1283827, y: 1.4046006}
+      - {x: -9.599999, y: 1.5749999}
+      - {x: -9.599999, y: -1.5749998}
+      - {x: 9.599999, y: -1.5749998}
+      - {x: 9.833821, y: 1.7197295}
 --- !u!212 &1920033435
 SpriteRenderer:
   m_ObjectHideFlags: 0
