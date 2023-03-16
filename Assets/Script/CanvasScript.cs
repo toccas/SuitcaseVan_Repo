@@ -20,7 +20,11 @@ public class CanvasScript : MonoBehaviour
         Application.LoadLevel(Application.loadedLevel);
         Time.timeScale = 1.0f;
     }
-
+    public void Options()
+    {
+        SceneManager.LoadScene(9);
+        
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -62,55 +66,55 @@ public class CanvasScript : MonoBehaviour
     public void Ringraziamenti()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(2);
     }
 
 
     public void primoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void SecondoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void TerzoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     public void QuartoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 
     public void QuintoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
     public void SestoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
     public void SettimoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 
     public void OttavoLivello()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(10);
     }
 }

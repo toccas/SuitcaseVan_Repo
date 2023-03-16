@@ -789,7 +789,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
@@ -1297,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
@@ -2059,7 +2059,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
@@ -2155,7 +2155,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
@@ -2982,8 +2982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winPanel: {fileID: 63791567}
+  winPanel2: {fileID: 0}
+  winPanel3: {fileID: 0}
   losePanel: {fileID: 1329318264}
   pauseButton: {fileID: 843618449}
+  plancia: {fileID: 0}
   numberSuitcase: 8
   nextLevel: Livello2
   levelToUnlock: 7
@@ -5955,7 +5958,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
@@ -7384,7 +7387,7 @@ PrefabInstance:
     - target: {fileID: 8700154991072396681, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}
       propertyPath: sceneToStart
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8700154991072396692, guid: e43d4cf5a0e1e434aa6cc9e32ad3e257,
         type: 3}

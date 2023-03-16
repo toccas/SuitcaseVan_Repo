@@ -8,8 +8,12 @@ using TMPro;
 public class Win : MonoBehaviour
 {
     public GameObject winPanel;
+    public GameObject winPanel2;
+    public GameObject winPanel3;
     public GameObject losePanel;
     public GameObject pauseButton;
+    public GameObject plancia;
+
 
     public int numberSuitcase;
 
@@ -18,7 +22,10 @@ public class Win : MonoBehaviour
 
     void Start()
     {
+        plancia.SetActive(true);
         winPanel.SetActive(false);
+        winPanel2.SetActive(false);
+        winPanel3.SetActive(false);
         losePanel.SetActive(false);
     }
 
@@ -26,6 +33,7 @@ public class Win : MonoBehaviour
     {
         if (numberSuitcase <= 0)
         {
+            plancia.SetActive(false);
             losePanel.SetActive(true);
             pauseButton.SetActive(false);
         }
@@ -42,16 +50,34 @@ public class Win : MonoBehaviour
 
         if (numberSuitcase <= 0)
         {
+            plancia.SetActive(false);
             losePanel.SetActive(true);
             pauseButton.SetActive(false);
         }
 
         if (numberSuitcase >= 0)
         {
+            if(numberSuitcase == 2){
             Time.timeScale = 0f;
+            plancia.SetActive(false);
             winPanel.SetActive(true);
             pauseButton.SetActive(false);
             WinLevel();
+            }
+            if (numberSuitcase == 4 || numberSuitcase == 6) {
+                Time.timeScale = 0f;
+                plancia.SetActive(false);
+                winPanel2.SetActive(true);
+                pauseButton.SetActive(false);
+                WinLevel();
+            }
+            if (numberSuitcase == 8) {
+                Time.timeScale = 0f;
+                plancia.SetActive(false);
+                winPanel3.SetActive(true);
+                pauseButton.SetActive(false);
+                WinLevel();
+            }
         }
     }
 
