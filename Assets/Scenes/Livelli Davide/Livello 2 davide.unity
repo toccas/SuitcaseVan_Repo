@@ -1809,7 +1809,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.599999, y: 1.5749999}
+    - - {x: -9.617715, y: 1.541943}
       - {x: -9.599999, y: -1.5749998}
       - {x: 9.599999, y: -1.5749998}
       - {x: 9.432976, y: 1.5813057}
@@ -7103,7 +7103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1903459417
 MonoBehaviour:
   m_ObjectHideFlags: 0
